@@ -53,7 +53,7 @@ namespace APICartola.Controllers
                     id = item.idAcao,
                     codAcao = _context.Acao.Where(x => x.id == item.idAcao).Select(x => x.codAcao).FirstOrDefault(),
                     cotacao = item.cotacao,
-                    dataCotacao = item.dataCotacao,
+                    dataCotacao = item.dataCotacao.ToString("dd/MM/yyyy"),
                     variacao = item.variacao
                 });
             }

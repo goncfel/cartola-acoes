@@ -11,6 +11,6 @@ namespace APICartola.ViewModel
         public string codAcao { get; set; }
         public decimal cotacao { get; set; }
         public decimal variacao { get; set; }
-        public DateTime dataCotacao { get; set; }
+        public string dataCotacao { get; set; }
     }
 }
